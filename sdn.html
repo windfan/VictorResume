@@ -40,9 +40,52 @@
 		<div id="mid_detail" class="container">
 			<!-- New layout -->
 			<div id="center" class="column">
-				
-				sdn
-				
+				<div><img src="images/sdn.png" style="width: 100%;"></div>
+				<div id="sdn_detail">
+					<h2>GOAL</h2>
+					<h3>
+						<ul>
+							<li>Control the network flow to meet specific purposes.</li>
+							<li>Develop the SDN controller.</li>
+							<li>Build a functional network environment based on SDN controller and switches.</li>
+						</ul>
+					</h3>
+					<h2>MEETING SPECIFIC PURPOSES</h2>
+					<h3>
+						<ul>
+							<li>ICMP and TCP packets take the shorter path.</li>
+							<li>UDP packets take the longer path.</li>
+							<li>Host 1 cannot have TCP connection to Host 3 and new connections are dropped with a RST at switch 1.</li>
+							<li>Host 2 cannot have UDP connection to Host 3 and new connections are simply dropped.</li>
+							<li>Configure the switch to make the flow entry table to be 100.</li>
+							<li>The solution to deal the overflow of flow entry in switch.</li>
+						</ul>
+					</h3>
+					<h2>VIDEO DEMO(NO SOUND)</h2>
+					<div style="text-align:center"> 
+					    <button class="videoButton" onclick="playPause()">Play/Pause</button> 
+					    <button class="videoButton" onclick="makeSmall()">Small</button>
+					    <button class="videoButton" onclick="makeNormal()">Normal</button>
+					    <br> <br>
+					    <video id="video1" width="720">
+					    	<source src="videos/SDN.mp4" type="video/mp4">
+					    	Your browser does not support HTML5 video.
+					 	</video>
+					</div>
+					<h2>Develop the SDN controller</h2> 
+					<h3>
+						<ul>
+							<li>By using Python programming language.</li>
+							<li>Coding a mechanism to handle ARP packets to allow ping to test connectivity.</li>
+							<li>Coding a mechanism to handle TCP, UDP and ICMP packets.</li>
+							<li>Coding some ACL rules to block restricted flows.</li>
+						</ul>
+					</h3>
+					
+
+
+				</div>
+				<button id="gobackButton"><a href="myworks.html">&#x2190; GO BACK</a></button>
 			</div>
 			<div id="left" class="column"></div>
 			<div id="right" class="column"></div>
@@ -56,7 +99,20 @@
 			<span><a href="MAILTO: ryu1031@gmail.com">RYU1031@GMAIL.COM</a></span><span style="text-align: center">
 		</div>
 		<script type="text/javascript">
-			
+			var myVideo = document.getElementById("video1"); 
+
+				function playPause() { 
+				    if (myVideo.paused) 
+				        myVideo.play(); 
+				    else 
+				        myVideo.pause(); 
+				} 
+				function makeSmall() { 
+				    myVideo.width = 480; 
+				} 
+				function makeNormal() { 
+				    myVideo.width = 720; 
+				} 
 
 
 		</script>

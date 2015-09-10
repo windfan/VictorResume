@@ -122,19 +122,40 @@ body {
 h1 {
 	font-size: 2em;
 	font-weight: normal;
+	font-family: Helvetica;
 }
 h2 {
 	font-size: 1.5em;
 	font-weight: normal;
+	font-family: Helvetica;
 }
 h3 {
 	font-size: 1em;
 	font-weight: normal;
+	font-family: Helvetica;
+	/*text-indent: 50px;*/
 }
 p {
 	font-size: 1em;
 	font-weight: normal;
+	font-family: Helvetica;
 
+}
+#gobackButton {
+	border-radius: 10 10 10 10;
+	background-color: #B8DBFF;
+	border-style: none;
+	padding: 10px;
+	border: 1px solid blue;
+}
+.videoButton {
+	border-radius: 10 10 10 10;
+	background-color: #B8DBFF;
+	border-style: none;
+	padding: 10px;
+	border: 1px solid blue;
+	margin-left: 20px;
+	margin-right: 20px; 
 }
 #footer {
 	position: relative;
