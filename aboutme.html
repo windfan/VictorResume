@@ -1,0 +1,226 @@
+<DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>VICTOR | PORTFOLIO</title>
+		<link rel="stylesheet" type="text/css" href="Stylesheets/aboutme.css">
+	</head>
+	<body>
+
+		<div id="header_bar_container" class="topBar">
+			<a href="index.html">
+				<!-- <img id="topBarLogo" src="images/topLogo.png"> -->
+				<div id="topBarLogo">VICTOR | <span style="color:red">PORTFOLIO</span></div>
+			</a>
+			<div id="topBarText">EMAIL: <span><a href="MAILTO: ryu1031@gmail.com">RYU1031@GMAIL.COM</a></span></div>
+		</div>
+
+		<center>
+			<div id="top_area_container">
+
+				<div id="topBanner"> 
+					<img src="images/topBanner.png" id="topBannerImage">
+				</div>
+				<!-- <img id="headerBackground" src="images/headerbackground.jpg"> -->
+		<!-- 		<img id="headshot" alt="Head Shot" src="images/headshot.png">
+		 -->		<!-- <h1> Vicotr's Personal Website </h1> -->
+			</div>
+		</center>
+
+
+		<ul id="nav_bar_menu">
+			<li class="nav_button_container"><a class="nav_button_item" href="index.html" >HOME</a></li>
+			<span style="font-size: 32px; vertical-align: baseline"> | </span>
+			<li class="nav_button_container"><a class="nav_button_item" href="aboutme.html">ABOUT ME</a></li>
+			<span style="font-size: 32px; vertical-align: baseline"> | </span>
+			<li class="nav_button_container"><a class="nav_button_item" href="myworks.html">MY WORKS</a></li>
+			<span style="font-size: 32px; vertical-align: baseline"> | </span>
+			<li class="nav_button_container"><a class="nav_button_item" href="fun.html">FUN</a></li>
+		</ul>
+
+		
+
+
+		<div id="mid_detail" class="container">
+			<!-- New layout -->
+			<div id="center" class="column">
+
+				<div id="headShot_container" class="column_content">
+					<div id="headShot_frame">
+						<img src="images/headshot.png" id="headShot" alt="headshot">
+					</div>
+					<br>
+					<div style="margin-right: 10%;">
+						<table>
+							<tr>
+								<td><a href="https://www.linkedin.com/pub/tzu-hao-victor-huang/88/90b/43a" target="_blank"><img src="images/in.png" class="socials"></a></td>
+								<td><a href="https://www.facebook.com/ryuspace" target="_blank"><img src="images/fb.png" class="socials"></a></td>
+								<td style="text-align: center"><a href="mailto: ryu1031@gmail.com"><img src="images/mail.png" class="socials"></a></td>
+								<td><a href="https://github.com/windfan?tab=repositories" target="_blank"><img src="images/github.png" class="socials"></a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="content_container" class="column_content">
+					<div id="content_frame" class="inner">
+						<h1>TZU-HAO HUANG (VICTOR)</h1>
+						<h2>MY STORY</h2>
+						<p>     I like programming. I will feel a sense of accomplishment after solving an algorithm problems or after seeing the project's outcome I've been developing. And that's the thing that keeps me going.</p>
+						<p>     Also, I learn fast and I'm not afraid of challenge. Every time I faced a challenge, I always made plans to solve them, bit by bit, steps by steps.</p>
+
+						<p>     What's next for me? I want to immerse myself into the world of coding and develop something that is helpful to people, as well as gaining the experience to be a professional developer.</p>
+						
+						<h2>MY SKILLS</h2>
+						<h3>FRONT-END SKILLS:</h3>
+						<table>
+							<tr>
+								<td><img src="images/js.png" id="js_detail" class="skill_icon" onclick="showSkill('js_detail', 'skill_detail');"></td>
+								<td><img src="images/html5.png" id="html5_detail" class="skill_icon" onclick="showSkill('html5_detail', 'skill_detail');"></td>
+								<td><img src="images/css3.png" id="css3_detail" class="skill_icon" onclick="showSkill('css3_detail', 'skill_detail');"></td>
+							</tr>	
+						</table>
+						
+						<br>
+						<h3>BACK-END SKILLS:</h3>
+						<table>
+							<tr>
+								<td><img src="images/java.png" id="java_detail" class="skill_icon" onclick="showSkill('java_detail', 'skill_detail');"></td>
+								<td><img src="images/mysql.png" id="mysql_detail" class="skill_icon" onclick="showSkill('mysql_detail', 'skill_detail');"></td>
+								<td><img src="images/sqlite.png" id="sqlite_detail" class="skill_icon" onclick="showSkill('sqlite_detail', 'skill_detail');"></td>
+								<td><img src="images/python.png" id="python_detail" class="skill_icon" onclick="showSkill('python_detail', 'skill_detail');"></td>
+							</tr>	
+						</table><br>
+
+						<h3>MOBILE APPLICATION SKILLS:</h3>
+						<table>
+							<tr>
+								<td><img src="images/android.png" id="android_detail" class="skill_icon" onclick="showSkill('android_detail', 'skill_detail');"></td>
+								<td><img src="images/eclipse.png" id="eclipse_detail" class="skill_icon" onclick="showSkill('eclipse_detail', 'skill_detail');"></td>
+							</tr>	
+						</table><br>
+						<table class="skill_table">
+							<caption style="float: left;">Details:</caption>
+							<tr><td><p id="skill_detail" style="font-size: 16px;">Click the icons above to show detail of my experience.</p></td></tr>
+						</table><br>
+						
+						<h2>EDUCATION</h2>
+						<table id="education_table">
+							<tr>
+								<td class="left_container"><img src="images/nyu.jpg" class="uni_icon"></td>
+								<td class="uni_detail">
+									<p><b>New York University</b></p>
+									<p class="major">Major in Telecommunication Networks, GPA: 3.58, 2013-2015</p>
+									<span id="arrow_nyu">&#x2192;</span><input value="Click to show courses" type="button" class="show" id="nyu_button" onclick="showCourseContent('nyu_button', 'nyu', 'arrow_nyu');"></input>
+									<table id="nyu" class="course_list">
+										<tr>
+											<td>Algorithm</td>
+											<td>Android Development</td>
+										</tr>
+										<tr>
+											<td>Information Security</td>
+											<td>Network Security</td>
+										</tr>
+										<tr>
+											<td>Internet Achitecture and Protocols</td>		
+											<td>Software Defined Network</td>
+
+										</tr>
+
+									</table>
+
+
+								</td>
+							</tr>
+							<tr><td><hr></td><td><hr></td></tr>
+							<tr>
+								<td class="left_container"><img src="images/npue.png" class="uni_icon"></td>
+								<td class="uni_detail">
+									<p><b>National PingTung University of Education</b></p>
+									<p class="major">Major in Computer Science, GPA: 3.48, 2004-2008</p>
+									<span id="arrow_npue">&#x2192;</span><input value="Click to show courses" type="button" class="show" id="npue_button" onclick="showCourseContent('npue_button', 'npue', 'arrow_npue');"></input><br>
+
+									<table id="npue" class="course_list">
+										<tr>
+											<td>Java Programming</td>
+											<td>Data Structure</td>
+										</tr>
+										<tr>
+											<td>Web Programming</td>
+											<td>Database Programming</td>
+										</tr>
+
+									</table>
+								</td>
+							</tr>	
+
+						</table>
+						<br>
+						<button id="gotoButton"><a href="myworks.html">GO TO MY WORKS &#x2192;</a></button>
+
+
+					</div>
+				</div>
+			</div>
+			<div id="left" class="column"></div>
+			<div id="right" class="column"></div>
+		</div>
+
+		<br>
+		<div id="footer">
+			<span><a href="MAILTO: ryu1031@gmail.com">RYU1031@GMAIL.COM</a></span><span style="text-align: center">
+		</div>
+		<script type="text/javascript">
+			function showCourseContent(id1, id2, id3) {
+				var elm1 = document.getElementById(id1);
+				var elm2 = document.getElementById(id2);
+				var elm3 = document.getElementById(id3);
+				if(elm1.value == "Click to show courses" && elm2.style.display == "none" && elm3.innerHTML == "\u2192") {
+					elm1.value = "Hide";
+					elm2.style.display = "inline";
+					elm3.innerHTML = "\u2193";
+				}
+				else {
+					elm1.value = "Click to show courses";
+					elm2.style.display = "none";
+					elm3.innerHTML = "\u2192";
+				}
+			}
+
+			function showSkill(id1, id2) {
+				var elm = document.getElementById(id2);
+				if(id1 == 'js_detail') {
+					elm.innerHTML = "By using JavaScript to build the interactions between users and webpage.";
+				}
+				if(id1 == 'html5_detail') {
+					elm.innerHTML = "By using HTML to build the whole structure of the website, from the scratch.";
+				}
+				if(id1 == 'css3_detail') {
+					elm.innerHTML = "By using CSS3 to give a style to the webpage to make it more attractive.";
+				}
+				if(id1 == 'java_detail') {
+					elm.innerHTML = "For me, Java is a programming language I'm most falimiar with. I used Java to develop an Android App. Also I used Java to prepare for my technical interviews, as well as my algorithm practice. "
+				}
+				if(id1 == 'mysql_detail') {
+					elm.innerHTML = "I used MySQL on the home page to show the latest news."
+				}
+				if(id1 == 'sqlite_detail') {
+					elm.innerHTML = "I used SQLite on my Android App to store the information of the event nearby."
+				}
+				if(id1 == 'python_detail') {
+					elm.innerHTML = "I used Python on one of my project named 'Software defined network(SDN) project with Mininet and OpenFlow'. I built the controller for the SDN network to manage the network flow as well as access control."
+				}
+				if(id1 == 'android_detail') {
+					elm.innerHTML = "My team members and I deveoped an Android App which will show the events nearby and tell you what public events the users can attend. "
+				}
+				if(id1 == 'eclipse_detail') {
+					elm.innerHTML = "I used Eclipse to develop an Android App."
+				}
+
+			}
+
+		</script>
+
+		
+		
+
+	</body>
+</html>
