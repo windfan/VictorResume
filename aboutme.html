@@ -45,66 +45,81 @@
 		<div id="mid_detail" class="container">
 			<!-- New layout -->
 			<div id="center" class="column">
-
-				<div id="headShot_container" class="column_content">
-					<div id="headShot_frame">
-						<img src="images/headshot.png" id="headShot" alt="headshot">
+				<div style="width: 100%;">
+					<div id="headShot_container" class="column_content">
+						<div id="headShot_frame">
+							<img src="images/headshot.png" id="headShot" alt="headshot">
+						</div>
+						<br>
+						<div id="social_frame">
+							<table id="social_table">
+								<tr class="social_row">
+									<td class="social_col"><a href="https://www.linkedin.com/pub/tzu-hao-victor-huang/88/90b/43a" target="_blank" class="social_link"><img src="images/in.png" class="social_image"></a></td>
+									<td class="social_col"><a href="https://www.facebook.com/ryuspace" target="_blank" class="social_link"><img src="images/fb.png" class="social_image"></a></td>
+								</tr>
+								<tr class="social_row">
+									<td class="social_col"><a href="mailto: ryu1031@gmail.com" class="social_link"><img src="images/mail.png" class="social_image"></a></td>
+									<td class="social_col"><a href="https://github.com/windfan?tab=repositories" target="_blank" class="social_link"><img src="images/github.png" class="social_image"></a></td>
+								</tr>
+							</table>
+						</div>
 					</div>
-					<br>
-					<div style="margin-right: 10%;">
-						<table>
-							<tr>
-								<td><a href="https://www.linkedin.com/pub/tzu-hao-victor-huang/88/90b/43a" target="_blank"><img src="images/in.png" class="socials"></a></td>
-								<td><a href="https://www.facebook.com/ryuspace" target="_blank"><img src="images/fb.png" class="socials"></a></td>
-								<td style="text-align: center"><a href="mailto: ryu1031@gmail.com"><img src="images/mail.png" class="socials"></a></td>
-								<td><a href="https://github.com/windfan?tab=repositories" target="_blank"><img src="images/github.png" class="socials"></a></td>
+					<div id="content_container" class="column_content">
+						<div id="content_frame">
+							<h1>TZU-HAO HUANG (VICTOR)</h1>
+							<h2>MY STORY</h2>
+							<p>     I like programming. I will feel a sense of accomplishment after solving an algorithm problems or after seeing the project's outcome I've been developing. And that's the thing that keeps me going.</p>
+							<p>     Also, I learn fast and I'm not afraid of challenge. Every time I faced a challenge, I always made plans to solve them, bit by bit, steps by steps.</p>
+
+							<p>     What's next for me? I want to immerse myself into the world of coding and develop something that is helpful to people, as well as gaining the experience to be a professional developer.</p>
+						</div>
+					</div>
+					<br><br>
+					<h2>MY SKILLS</h2>
+					<div id="skill_frame">
+						<!-- <h3>FRONT-END SKILLS:</h3> -->
+						<table id="total_skill_table">
+							<tr id="total_skill_row">
+								<td class="total_skill_col">
+									<table class="front_back_mobile">
+										<caption><h3>FRONT-END SKILLS</h3></caption>
+										<tr class="front_back_mobile_row">
+											<td class="front_back_mobile_col"><img src="images/js.png" id="js_detail" class="skill_icon" onclick="showSkill('js_detail', 'skill_detail');"></td>
+											<td class="front_back_mobile_col"><img src="images/html5.png" id="html5_detail" class="skill_icon" onclick="showSkill('html5_detail', 'skill_detail');"></td>
+											<td class="front_back_mobile_col"><img src="images/css3.png" id="css3_detail" class="skill_icon" onclick="showSkill('css3_detail', 'skill_detail');"></td>
+										</tr>	
+									</table>
+								</td>
+								<td class="total_skill_col">
+									<table class="front_back_mobile">
+										<caption><h3>BACK-END SKILLS</h3></caption>
+										<tr class="front_back_mobile_row">
+											<td class="front_back_mobile_col"><img src="images/java.png" id="java_detail" class="skill_icon" onclick="showSkill('java_detail', 'skill_detail');"></td>
+											<td class="front_back_mobile_col"><img src="images/mysql.png" id="mysql_detail" class="skill_icon" onclick="showSkill('mysql_detail', 'skill_detail');"></td>
+											<td class="front_back_mobile_col"><img src="images/sqlite.png" id="sqlite_detail" class="skill_icon" onclick="showSkill('sqlite_detail', 'skill_detail');"></td>
+											<td class="front_back_mobile_col"><img src="images/python.png" id="python_detail" class="skill_icon" onclick="showSkill('python_detail', 'skill_detail');"></td>
+										</tr>	
+									</table>
+								</td>
+								<td class="total_skill_col">
+									<table class="front_back_mobile">
+										<caption><h3>MOBILE</h3></caption>
+										<tr class="front_back_mobile_row">
+											<td class="front_back_mobile_col"><img src="images/android.png" id="android_detail" class="skill_icon" onclick="showSkill('android_detail', 'skill_detail');"></td>
+											<td class="front_back_mobile_col"><img src="images/eclipse.png" id="eclipse_detail" class="skill_icon" onclick="showSkill('eclipse_detail', 'skill_detail');"></td>
+										</tr>	
+									</table>
+								</td>
 							</tr>
 						</table>
-					</div>
-				</div>
-				<div id="content_container" class="column_content">
-					<div id="content_frame" class="inner">
-						<h1>TZU-HAO HUANG (VICTOR)</h1>
-						<h2>MY STORY</h2>
-						<p>     I like programming. I will feel a sense of accomplishment after solving an algorithm problems or after seeing the project's outcome I've been developing. And that's the thing that keeps me going.</p>
-						<p>     Also, I learn fast and I'm not afraid of challenge. Every time I faced a challenge, I always made plans to solve them, bit by bit, steps by steps.</p>
-
-						<p>     What's next for me? I want to immerse myself into the world of coding and develop something that is helpful to people, as well as gaining the experience to be a professional developer.</p>
-						
-						<h2>MY SKILLS</h2>
-						<h3>FRONT-END SKILLS:</h3>
-						<table>
-							<tr>
-								<td><img src="images/js.png" id="js_detail" class="skill_icon" onclick="showSkill('js_detail', 'skill_detail');"></td>
-								<td><img src="images/html5.png" id="html5_detail" class="skill_icon" onclick="showSkill('html5_detail', 'skill_detail');"></td>
-								<td><img src="images/css3.png" id="css3_detail" class="skill_icon" onclick="showSkill('css3_detail', 'skill_detail');"></td>
-							</tr>	
-						</table>
-						
 						<br>
-						<h3>BACK-END SKILLS:</h3>
-						<table>
-							<tr>
-								<td><img src="images/java.png" id="java_detail" class="skill_icon" onclick="showSkill('java_detail', 'skill_detail');"></td>
-								<td><img src="images/mysql.png" id="mysql_detail" class="skill_icon" onclick="showSkill('mysql_detail', 'skill_detail');"></td>
-								<td><img src="images/sqlite.png" id="sqlite_detail" class="skill_icon" onclick="showSkill('sqlite_detail', 'skill_detail');"></td>
-								<td><img src="images/python.png" id="python_detail" class="skill_icon" onclick="showSkill('python_detail', 'skill_detail');"></td>
-							</tr>	
-						</table><br>
-
-						<h3>MOBILE APPLICATION SKILLS:</h3>
-						<table>
-							<tr>
-								<td><img src="images/android.png" id="android_detail" class="skill_icon" onclick="showSkill('android_detail', 'skill_detail');"></td>
-								<td><img src="images/eclipse.png" id="eclipse_detail" class="skill_icon" onclick="showSkill('eclipse_detail', 'skill_detail');"></td>
-							</tr>	
-						</table><br>
 						<table class="skill_table">
 							<caption style="float: left;">Details:</caption>
 							<tr><td><p id="skill_detail" style="font-size: 16px;">Click the icons above to show detail of my experience.</p></td></tr>
 						</table><br>
-						
-						<h2>EDUCATION</h2>
+					</div>
+					<h2>EDUCATION</h2>
+					<div>
 						<table id="education_table">
 							<tr>
 								<td class="left_container"><img src="images/nyu.jpg" class="uni_icon"></td>
@@ -153,14 +168,12 @@
 									</table>
 								</td>
 							</tr>	
-
 						</table>
 						<br>
 						<button id="gotoButton"><a href="myworks.html">GO TO MY WORKS &#x2192;</a></button>
-
-
 					</div>
 				</div>
+				
 			</div>
 			<div id="left" class="column"></div>
 			<div id="right" class="column"></div>

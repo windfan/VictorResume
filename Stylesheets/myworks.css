@@ -41,7 +41,7 @@
 	text-align: center;
 }
 #nav_bar_menu {
-	width: 40%;
+	width: 100%;
 	display: table;
 	list-style: none;
 	padding: 0;
@@ -138,13 +138,20 @@ p {
 	font-weight: normal;
 }
 #my_work_container {
-	margin-left: 10%;
-	margin-right: 10%;
+	text-align: center;
 }
-.myworksImages {
+.myworks_banner .myworksImages_link .myworksImages_images{
+	margin: auto;
+	width: 80%;
+}
+/*.myworksImages {
 	padding: 10px;
 	
 }
+#my_word_table {
+	width: 100%;
+	margin: auto;
+}*/
 #footer {
 	position: relative;
 	font-family: Helvetica, sans-serif;	

@@ -41,7 +41,7 @@
 	text-align: center;
 }
 #nav_bar_menu {
-	width: 40%;
+	width: 100%;
 	display: table;
 	list-style: none;
 	padding: 0;
@@ -146,17 +146,18 @@ body {
 	padding-right: 10px;
 	width: 25%;
 	margin-top: 15px;
+	text-align: center;
 
 }
 
-#headShot_frame {
+#headShot_frame #headShot{
 	padding: 10px;
-	float: middle;
+	width: 70%;
+	margin: auto;
 }
 
 #headShot {
-	width: 150px;
-	height: 150px;
+	
 	border-style: solid;
 	border-width: 5px;
 	border-color: #ADD6FF;
@@ -165,26 +166,33 @@ body {
 
 }
 #content_container {
+	/*width: 75%;*/
+	text-align: center;
+}
+#content_frame {
 	text-align: left;	
 	font-family: Helvetica, sans-serif;
-	margin-left: 10px;
-	width: 75%;
+	margin: auto;
 }
 h1 {
 	font-size: 2em;
 	font-weight: normal;
+	font-family: Helvetica, sans-serif;
 }
 h2 {
 	font-size: 1.5em;
 	font-weight: normal;
+	font-family: Helvetica, sans-serif;
 }
 h3 {
 	font-size: 1em;
 	font-weight: normal;
+	font-family: Helvetica, sans-serif;
 }
 p {
 	font-size: 1em;
 	font-weight: normal;
+	font-family: Helvetica, sans-serif;
 
 }
 
@@ -216,9 +224,9 @@ p {
 	cursor: pointer;
 }
 .skill_icon {
-	width: 80px;
-	height: 80px;
-	margin: 5px;
+	width: 100%;
+	/*height: 80px;*/
+	margin: auto;
 	cursor: pointer;
 }
 .skill_table {
@@ -227,6 +235,7 @@ p {
 	padding: 10px;
 	width: 100%;
 	background-color: #B8DBFF;
+	margin: auto;
 	
 }
 #gotoButton {
@@ -236,11 +245,18 @@ p {
 	padding: 10px;
 	border: 1px solid blue;
 }
-.socials {
+#social_frame .social_row .social_col{
+	text-align: center;
+}
+.social_link .social_image {
+	width: 50%;
+	margin: auto;
+}
+/*.social_image {
 	height: 30px;
 	float: left;
 	margin: 5px;
-}
+}*/
 /*#nyu {
 	display: none;
 }
@@ -253,6 +269,17 @@ p {
 	border-collapse: collapse;
 	vertical-align: center;
 }*/
+#skill_frame {
+	text-align: center;
+}
+#total_skill_table #total_skill_row .total_skill_col .front_back_mobile .front_back_mobile_row .front_back_mobile_col .skill_icon{
+	margin:auto;
+	/*width: 100%;*/
+}
+.front_back_mobile {
+	border-top: 3px solid blue;
+}
+
 #footer {
 	position: relative;
 	font-family: Helvetica, sans-serif;	
