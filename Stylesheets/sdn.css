@@ -37,7 +37,9 @@
 #topBannerImage {
 	width:100%;
 }
-
+#nav_container {
+	text-align: center;
+}
 #nav_bar_menu {
 	width: 40%;
 	display: table;
@@ -156,6 +158,20 @@ p {
 	border: 1px solid blue;
 	margin-left: 20px;
 	margin-right: 20px; 
+}
+#banner {
+	width: 100%;
+	margin: auto;
+}
+#banner_container {
+	text-align: center;
+}
+#video_container {
+	text-align: center;
+}
+#video_element {
+	margin: auto;
+	width: 100%;
 }
 #footer {
 	position: relative;

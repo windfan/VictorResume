@@ -26,21 +26,22 @@
 			</div>
 		</center>
 
-
-		<ul id="nav_bar_menu">
-			<li class="nav_button_container"><a class="nav_button_item" href="index.html" >HOME</a></li>
-			<span style="font-size: 32px; vertical-align: baseline"> | </span>
-			<li class="nav_button_container"><a class="nav_button_item" href="aboutme.html">ABOUT ME</a></li>
-			<span style="font-size: 32px; vertical-align: baseline"> | </span>
-			<li class="nav_button_container"><a class="nav_button_item" href="myworks.html">MY WORKS</a></li>
-			<span style="font-size: 32px; vertical-align: baseline"> | </span>
-			<li class="nav_button_container"><a class="nav_button_item" href="fun.html">FUN</a></li>
-		</ul>
+		<div id="nav_container">
+			<ul id="nav_bar_menu">
+				<li class="nav_button_container"><a class="nav_button_item" href="index.html" >HOME</a></li>
+				<span style="font-size: 32px; vertical-align: baseline"> | </span>
+				<li class="nav_button_container"><a class="nav_button_item" href="aboutme.html">ABOUT ME</a></li>
+				<span style="font-size: 32px; vertical-align: baseline"> | </span>
+				<li class="nav_button_container"><a class="nav_button_item" href="myworks.html">MY WORKS</a></li>
+				<span style="font-size: 32px; vertical-align: baseline"> | </span>
+				<li class="nav_button_container"><a class="nav_button_item" href="fun.html">FUN</a></li>
+			</ul>
+		</div>
 
 		<div id="mid_detail" class="container">
 			<!-- New layout -->
 			<div id="center" class="column">
-				<div><img src="images/sdn.png" style="width: 100%;"></div>
+				<div id="banner_container"><img src="images/sdn.png" id="banner"></div>
 				<div id="sdn_detail">
 					<h2>GOAL</h2>
 					<h3>
@@ -62,15 +63,17 @@
 						</ul>
 					</h3>
 					<h2>VIDEO DEMO(NO SOUND)</h2>
-					<div style="text-align:center"> 
-					    <button class="videoButton" onclick="playPause()">Play/Pause</button> 
-					    <button class="videoButton" onclick="makeSmall()">Small</button>
-					    <button class="videoButton" onclick="makeNormal()">Normal</button>
-					    <br> <br>
-					    <video id="video1" width="720">
-					    	<source src="videos/SDN.mp4" type="video/mp4">
-					    	Your browser does not support HTML5 video.
-					 	</video>
+					<div id="video_container"> 
+						<div id="video_element">
+						    <button class="videoButton" onclick="playPause()">Play/Pause</button> 
+						    <button class="videoButton" onclick="makeSmall()">Small</button>
+						    <button class="videoButton" onclick="makeNormal()">Normal</button>
+						    <br> <br>
+						    <video id="video1" width="720">
+						    	<source src="videos/SDN.mp4" type="video/mp4">
+						    	Your browser does not support HTML5 video.
+						 	</video>
+					 	</div>
 					</div>
 					<br><div style="font-size: 14px; text-align: center;">Video playing isn't supported on Firefox browser on this website.</div>
 					<h2>Develop the SDN controller</h2> 

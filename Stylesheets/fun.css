@@ -37,7 +37,9 @@
 #topBannerImage {
 	width:100%;
 }
-
+#nav_container {
+	text-align: center;
+}
 #nav_bar_menu {
 	width: 40%;
 	display: table;
