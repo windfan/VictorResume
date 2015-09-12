@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 	<head>
 		<title>VICTOR | PORTFOLIO</title>
@@ -40,44 +40,36 @@
 		</div>
 
 		<div id="mid_detail" class="container">
+			<br><br>
 			<!-- New layout -->
 			<div id="center" class="column">
-				<span>home page</span><br>
-				<span style="display: none" id="expand_content">12345<br>
-					45678<br>
-					789<br>
-					45678<br>
-					789<br>
-					45678<br>
-					789<br>
-					45678<br>
-					789<br>
-					45678<br>
-					789<br>
-					45678<br>
-					789<br>
-					45678<br>
-					789<br>
-					789<br>
-					789<br>
-					789<br>
-					789<br>
-					789<br>
-					45678<br>
-					789<br>
-					45678<br>
-					789<br>
-					45678<br>
-					789<br>
-					789<br>
-					789<br>
-					789<br>
-					789<br>
-				</span>	
-				<button id="expand_more" onclick="expand();">Expand</button><br>
-				<button id="expand_less" onclick="expandLess()" style="display: none">Less</button>	<br>	
-					12312312
-				
+				<div id="news_container">
+					<div id="news_frame">
+						<span id="latest_news">LATEST NEWS</span>
+						<div id="item1" class="news_item">123</div>
+						<div id="item2" class="news_item">456</div>
+						<div id="item3" class="news_item"><span class="news_text">Ver 0.5 &#x2192; Fix two frams in about me page.</span> <a href="#" class="myButton" onclick="expand('item3_hidden')">Read it</a>
+						<br><div class="item_hidden"><span id="item3_hidden" style="display: none;">Details: <br> 
+						<ul>
+							<li>Fix headshot and content frames' alignment.</li>
+							<li>Put education part in about me page.</li>
+						</ul></span></div></div>
+						<div id="item4" class="news_item"><span class="news_text">Ver 0.4 &#x2192; Working on about me page.</span> <a href="#" class="myButton" onclick="expand('item4_hidden')">Read it</a>
+						<br><div class="item_hidden"><span id="item4_hidden" style="display: none;">Details: <br> 
+						<ul>
+							<li>Create the navigation bar.</li>
+							<li>Center everything.</li>
+							<li>About me page: create the headshot frame and content frame.</li>
+						</ul></span></div></div>
+						<div id="item5" class="news_item"> <span class="news_text">Ver 0.2 &#x2192; Build the basic structure of index page.</span> <a href="#" class="myButton" onclick="expand('item5_hidden')">Read it</a>
+						<br><div class="item_hidden"><span id="item5_hidden" style="display: none;">Details: <br> 
+						<ul>
+							<li>Make the top bar</li>
+							<li>Make the banner</li>
+							<li>Create a center area and leave white space on left and right side.</li>
+						</ul></span></div></div>
+					</div>
+				</div>
 			</div>
 			<div id="left" class="column"></div>
 			<div id="right" class="column"></div>
@@ -91,16 +83,14 @@
 			<span><a href="MAILTO: ryu1031@gmail.com">RYU1031@GMAIL.COM</a></span><span style="text-align: center">
 		</div>
 		<script type="text/javascript">
-			function expand(){
-				document.getElementById("expand_content").style.display = "inline";
-				document.getElementById("expand_less").style.display = "inline";
-				document.getElementById("expand_more").style.display = "none";
-
-			}
-			function expandLess(){
-				document.getElementById("expand_content").style.display = "none";
-				document.getElementById("expand_less").style.display = "none";
-				document.getElementById("expand_more").style.display = "inline";
+			function expand(id1) {
+				var elm = document.getElementById(id1);
+				if(elm.style.display == 'none') {
+					elm.style.display = 'inline';
+				}
+				else {
+					elm.style.display = 'none';
+				}
 			}
 
 

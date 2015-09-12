@@ -1,8 +1,8 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 	<head>
 		<title>VICTOR | PORTFOLIO</title>
-		<link rel="stylesheet" type="text/css" href="Stylesheets/locator.css">
+		<link rel="stylesheet" type="text/css" href="Stylesheets/myworks_detail.css">
 	</head>
 	<body>
 
@@ -26,7 +26,6 @@
 			</div>
 		</center>
 
-
 		<div id="nav_container">
 			<ul id="nav_bar_menu">
 				<li class="nav_button_container"><a class="nav_button_item" href="index.html" >HOME</a></li>
@@ -42,10 +41,46 @@
 		<div id="mid_detail" class="container">
 			<!-- New layout -->
 			<div id="center" class="column">
-				
-				locator
-				
-			</div>
+				<div id="banner_container"><img src="images/locator_large.png" id="banner"></div>	
+				<h2>SHORT STORY</h2>
+				<h3>This project was from a course that we had to act like a start up company. We had to come up an idea and figure out who our target customers are.</h3>
+				<h3>Then we had to interview them based on our prototype app we drew on papers just to know how they will react to our idea or to know is the idea actually solving their problems.</h3>
+				<h3>Finally we used last 1.5 months of the semester to start building our Android application.</h3>
+				<h2>FEATURES</h2>
+				<h3>
+					<ul>
+						<li>Show the hottest public events nearby.</li>
+						<li>Check the events on categories.</li>
+						<li>Search the events.</li>
+						<li>Pin-point the events.</li>
+						<li>Check the event details, including showing the Google Map on our app.</li>
+					</ul>
+				</h3>
+				<h2>VIDEO DEMO(WITH SOUND)</h2>
+				<div id="video_container"> 
+					<div id="video_element">
+					    <!-- <button class="videoButton" onclick="playPause()">Play/Pause</button> 
+					    <button class="videoButton" onclick="mute()">Mute/Unmute</button>
+					    <button class="videoButton" onclick="makeOriginal()">Original Size</button>
+					    <button class="videoButton" onclick="makeLarge()">Large</button>
+					    <br> <br> -->
+					    <video id="video1" width="40%" controls>
+					    	<source src="videos/locator.mp4" type="video/mp4">
+					    	Your browser does not support HTML5 video.
+					 	</video>
+				 	</div>
+				</div>
+				<br><div style="font-size: 14px; text-align: center;">Video playing isn't supported on Firefox browser on this website.</div>
+				<h2>SKILLS I USED</h2>
+				<h3>
+					<ul>
+						<li>Eclipse: used Eclipse to build and test our Android Application.</li>
+						<li>Java: used Java to write the functions, including GPS detection, showing map on page, searching the events. etc.</li>
+						<li>SQLite: used SQLite to store the event informations locally.</li>
+					</ul>
+				</h3>
+				<button id="gobackButton"><a href="myworks.html">&#x2190; GO BACK</a></button>
+			</div>					
 			<div id="left" class="column"></div>
 			<div id="right" class="column"></div>
 		</div>
@@ -58,7 +93,28 @@
 			<span><a href="MAILTO: ryu1031@gmail.com">RYU1031@GMAIL.COM</a></span><span style="text-align: center">
 		</div>
 		<script type="text/javascript">
-			
+			var myVideo = document.getElementById("video1"); 
+
+				function playPause() { 
+				    if (myVideo.paused) 
+				        myVideo.play(); 
+				    else 
+				        myVideo.pause(); 
+				} 
+				function mute() { 
+				    if(myVideo.muted == true) {
+				    	myVideo.muted = false;
+				    } 
+				    else {
+				    	myVideo.muted = true;
+				    }
+				} 
+				function makeOriginal() { 
+				    myVideo.style.width = "40%"; 
+				}
+				function makeLarge() {
+					myVideo.style.width = "50%";
+				} 			
 
 
 		</script>
